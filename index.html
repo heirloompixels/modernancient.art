@@ -64,6 +64,19 @@
           background: #D9D7D7;
   }
 </style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#current').offset().top
+    }, 'slow');
+});
+
+</script>
 </head>
 
 <body>
