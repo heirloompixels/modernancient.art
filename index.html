@@ -52,6 +52,13 @@
   }
   body{ border-left: 15px solid #BFAB49; background: white; color: #010D00;  }
 
+  a { 
+          text-decoration: none; 
+  }
+  a:link, a:visited { }
+  a:hover p { background: #010D00; color: white; }
+  a:active {} 
+
   .list { color: #402F11; }
   #next p { color: #96D2D9; }
 
@@ -72,7 +79,7 @@
 $(document).ready(function () {
     // Handler for .ready() called.
     $('html, body').animate({
-        scrollTop: $('#current').offset().top
+        scrollTop: $('#current').offset().top - $( window ).height() /2 
     }, 'slow');
 });
 
@@ -138,13 +145,21 @@ $(document).ready(function () {
   <p class="todo" >#54 Summer 2019</p>
   <p  class="todo">#55 Autumn 2019</p>
   
+          <a href="#">
   <p class="folio winter"><span class="numbering"><span>#</span>056</span> Winter 2020 <span class="synops">The last moments of the before time.</span></p>
+  </a>
   
+          <a href="#">
   <p class="folio spring"><span class="numbering"><span>#</span>057</span> Spring 2020 <span class="synops">COVID in the Gila</span></p>
-  
+  </a> 
+          <a href="#">
   <p class="folio summer"><span class="numbering"><span>#</span>058</span> Summer 2020 <span class="synops">Rocks and TP and too full of mountains and vedavoo </span></p>
+  </a>
+
   <div id="current"> 
-  <p class="folio fall"><span class="numbering"><span>#</span>059</span><span class="season"> Autumn 2020</span> <span class="synops">Grey Headed Cheaps.</span></p>
+          <a href="#">
+                  <p class="folio fall"><span class="numbering"><span>#</span>059</span><span class="season"> Autumn 2020</span> <span class="synops">Grey Headed Cheaps.</span></p>
+          </a>
   </div>
 
   <p class="list">===>  SPECIAL PROJECTS</p>
