@@ -46,6 +46,7 @@
   .synops {
           width: 50%; 
           padding: 0 0 0 2vh; 
+          color: white; 
   }
   .folio, .release_date {
           display: flex; 
@@ -54,6 +55,7 @@
 
   a { 
           text-decoration: none; 
+          color: #010D00;
   }
   a:link, a:visited { }
   a:hover p { background: #010D00; color: white; }
@@ -62,14 +64,23 @@
   .list { color: #402F11; }
   #next p { color: #96D2D9; }
 
-  .winter { color: #03738C; }
-  .spring { color: #BFAB49; }
-  .summer { color: #77A612; }
-  .fall { color: #D97C2B; }
+  .no-winter { color: #03738C; }
+  .no-spring { color: #BFAB49; }
+  .no-summer { color: #77A612; }
+  .no-fall { color: #D97C2B; }
+
+  a.current span.synops {
+          color: #010D00;
+  }
+  a:hover span.synops {
+          color: white; 
+  }
+  
 
   #current {
           background: #D9D7D7;
   }
+  
 </style>
 
 
@@ -157,7 +168,7 @@ $(document).ready(function () {
   </a>
 
   <div id="current"> 
-          <a href="#">
+          <a class="current" href="#">
                   <p class="folio fall"><span class="numbering"><span>#</span>059</span><span class="season"> Autumn 2020</span> <span class="synops">Grey Headed Cheaps.</span></p>
           </a>
   </div>
