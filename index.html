@@ -44,12 +44,13 @@
   }
 
   .synops {
-          width: 50%; 
+          width: 40%; 
           padding: 0 0 0 2vh; 
           color: #A9A9A9; 
   }
   .folio, .release_date {
           display: flex; 
+          color: #A9A9A9;
   }
   body{ border-left: 15px solid #BFAB49; background: white; color: #010D00;  }
 
@@ -60,6 +61,7 @@
   a:link, a:visited { }
   a:hover p { background: #010D00; color: white; }
   a:active {} 
+
 
   .list { color: #D96262; #402F11; }
   .list { color: #D96262; }
@@ -81,8 +83,11 @@
   #current {
           background: #D9D7D7;
           background: #BFAB49;
+          background: white;
   }
-  
+  #current p { 
+          color: #010D00;
+  }
 </style>
 
 
@@ -171,18 +176,21 @@ $(document).ready(function () {
 
   <div id="current"> 
           <a class="current" href="#">
-                  <p class="folio fall"><span class="numbering"><span>#</span>059</span><span class="season"> Autumn 2020</span> <span class="synops">Grey Headed Cheaps.</span></p>
+                  <p class="folio fall">===>&nbsp;<span class="numbering"><span>#</span>059</span><span class="season"> Autumn 2020</span> <span class="synops">Grey Headed Cheaps.</span></p>
           </a>
   </div>
 
   <p class="list">===>  SPECIAL PROJECTS</p>
+  <p class="list">===>  <a href="https://desertarchaic.com">Shop Desert Archaic</a></p>
+  <p class="list">===>  <a href="https://jeannieortiz.com">Jeannie Ortiz</a></p>
+  <p class="list">===>  <a href="https://kyleparkercunningham.com">Kyle Parker Cunningham</a></p>
 
 
   <div id="next">
-  <p  class="folio winter"><span class="numbering"><span>#</span>060</span><span class="season"> Winter 2021</span> <span class="synops">Mon. 12&middot;21&middot;21 3:02 AM MST</span></p>
-  <p class="folio winter"><span class="release_date">+++> 1&middot;9&middot;2021 6PM MST</span> </p>
-  <p class="folio winter"> <span class="release_date">+++> 2&middot;13&middot;2021 2nd Sat. Drop</span> </p>
-  <p class="folio winter"> <span class="release_date">+++> 3&middot;13&middot;2021 2nd sat. drop</span> </p>
+          <p  class="folio winter">+++>&nbsp;<span class="numbering"><span>#</span>060</span><span class="season"> Winter 2021</span> <span class="synops">Mon. 12&middot;21&middot;21 3:02 AM MST</span></p>
+  <p class="folio winter"><span class="release_date">++++++> 1&middot;9&middot;2021 6PM MST</span> </p>
+  <p class="folio winter"> <span class="release_date">++++++> 2&middot;13&middot;2021 7AM MST</span> </p>
+  <p class="folio winter"> <span class="release_date">++++++> 3&middot;13&middot;2021 3AM MST</span> </p>
   </div>
 
   <div id="future">
