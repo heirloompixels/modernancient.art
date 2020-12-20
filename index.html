@@ -48,23 +48,24 @@
           padding: 0 0 0 2vh; 
           color: #A9A9A9; 
   }
-  .folio, .release_date {
+  .folio, .release_date, .current {
           display: flex; 
           color: #A9A9A9;
   }
-  body{ border-left: 15px solid #BFAB49; background: white; color: #010D00;  }
+  body{ background: white; color: #010D00;  }
 
   a { 
           text-decoration: none; 
           color: #010D00;
   }
   a:link, a:visited { }
-  a:hover p { background: #010D00; color: white; }
+  a:hover p, a:hover a, a:hover .folio { background: #010D00; color: white; }
   a:active {} 
 
 
   .list { color: #D96262; #402F11; }
   .list { color: #D96262; }
+  .list { color: #010D00; }
   #next p { color: #96D2D9; }
 
   .no-winter { color: #03738C; }
@@ -73,6 +74,9 @@
   .no-fall { color: #D97C2B; }
 
   a.current span.synops {
+          color: #010D00;
+  }
+  a.current a  {
           color: #010D00;
   }
   a:hover span.synops {
@@ -85,9 +89,13 @@
           background: #BFAB49;
           background: white;
   }
-  #current p { 
-          color: #010D00;
+  .current { 
+         color: black;  
   }
+  #special {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+}
 </style>
 
 
@@ -171,23 +179,23 @@ $(document).ready(function () {
   <p class="folio spring"><span class="numbering"><span>#</span>057</span> Spring 2020 <span class="synops">COVID in the Gila</span></p>
   </a> 
           <a href="#">
-  <p class="folio summer"><span class="numbering"><span>#</span>058</span> Summer 2020 <span class="synops">Rocks and TP and too full of mountains and vedavoo </span></p>
+                  <p class="folio summer">>&nbsp;<span class="numbering"><span>#</span>058</span> Summer 2020 <span class="synops">Rocks and TP and too full of mountains and vedavoo </span></p>
   </a>
 
   <div id="current"> 
-          <a class="current" href="#">
-                  <p class="folio fall">===>&nbsp;<span class="numbering"><span>#</span>059</span><span class="season"> Autumn 2020</span> <span class="synops">Grey Headed Cheaps.</span></p>
+          <a href="#">
+                  <p class="current">==>&nbsp;<span class="numbering"><span>#</span>059</span><span class="season"> Autumn 2020</span> <span class="synops">Grey Headed Cheaps.</span></p>
           </a>
   </div>
 
-  <p class="list">===>  SPECIAL PROJECTS</p>
-  <p class="list">===>  <a href="https://desertarchaic.com">Shop Desert Archaic</a></p>
-  <p class="list">===>  <a href="https://jeannieortiz.com">Jeannie Ortiz</a></p>
-  <p class="list">===>  <a href="https://kyleparkercunningham.com">Kyle Parker Cunningham</a></p>
+  <a href="#"><p id="special" class="list">==>  SPECIAL PROJECTS</p></a>
+  <a href="https://desertarchaic.com"><p class="list">==>  Shop Desert Archaic</p></a>
+  <a href="https://jeannieortiz.com"><p class="list">===>  Jeannie Ortiz</p></a>
+  <a href="https://kyleparkercunningham.com"><p class="list">===>  Kyle Parker Cunningham</p></a>
 
 
   <div id="next">
-          <p  class="folio winter">+++>&nbsp;<span class="numbering"><span>#</span>060</span><span class="season"> Winter 2021</span> <span class="synops">Mon. 12&middot;21&middot;21 3:02 AM MST</span></p>
+          <p  class="folio winter">+++>&nbsp;<span class="numbering"><span>#</span>060</span><span class="season"> Winter 2021</span> <span class="synops">Winter Solstice <br/>Mon. 12&middot;21&middot;21 3:02 AM MST</span></p>
   <p class="folio winter"><span class="release_date">++++++> 1&middot;9&middot;2021 6PM MST</span> </p>
   <p class="folio winter"> <span class="release_date">++++++> 2&middot;13&middot;2021 7AM MST</span> </p>
   <p class="folio winter"> <span class="release_date">++++++> 3&middot;13&middot;2021 3AM MST</span> </p>
