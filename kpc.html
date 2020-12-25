@@ -1,0 +1,267 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+<style>
+  p { 
+    margin: 0; 
+    line-height: 4vw;
+    font-size: 4.96vw;
+    text-transform: uppercase;
+    font-family: Andale Mono; 
+    padding: 1.5vh 0 1.5vh 1.1vw;
+  }
+  #past, .todo,  .future {
+          color: #d9d7d7;
+  }
+.synops,.numbering {
+    font-size: 2vw;
+    line-height: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+  .numbering {
+          text-align: right; 
+          padding: 0 2vw 0 0;
+  }
+
+  .synops {
+          width: 40%; 
+          padding: 0 0 0 2vh; 
+          color: #A9A9A9; 
+  }
+  .folio, .release_date, .current {
+          display: flex; 
+          color: #A9A9A9;
+  }
+  body{ background: white; color: #010D00;  }
+
+  a { 
+          text-decoration: none; 
+          color: #010D00;
+  }
+  a:link, a:visited { }
+  a:hover p, a:hover a, a:hover .folio { background: #010D00; color: white; }
+  a:active {} 
+
+
+  .list { color: #D96262; #402F11; }
+  .list { color: #D96262; }
+  .list { color: #010D00; }
+  #next p { color: #96D2D9; }
+
+  .no-winter { color: #03738C; }
+  .no-spring { color: #BFAB49; }
+  .no-summer { color: #77A612; }
+  .no-fall { color: #D97C2B; }
+
+  a.current span.synops {
+          color: #010D00;
+  }
+  a.current a  {
+          color: #010D00;
+  }
+  a:hover span.synops {
+          color: white; 
+  }
+  
+
+  #current {
+          background: #D9D7D7;
+          background: #BFAB49;
+          background: white;
+  }
+  .current { 
+         color: black;  
+  }
+  #special {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+}
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#current').offset().top - $( window ).height() /3 
+    }, 'slow');
+});
+
+</script>
+</head>
+
+<body>
+        <div id="past">
+  <!-- Add your site or application content here -->
+  <p>#1&nbsp; Spring 2006</p>
+  <p>#2&nbsp; Summer 2006</p>
+  <p>#3&nbsp; Autumn 2006</p>
+  <p>#4&nbsp; Winter 2007</p>
+  <p>#5&nbsp; Spring 2007</p>
+  <p>#6&nbsp; Summer 2007</p>
+  <p>#7&nbsp; Autumn 2007</p>
+  <p>#8&nbsp; Winter 2008</p>
+  <p>#9&nbsp; Spring 2008</p>
+  <p>#10 Summer 2008</p>
+  <p>#11 Autumn 2008</p>
+  <p>#12 Winter 2009</p> 
+  <p>#13 Spring 2009</p>
+  <p>#14 Summer 2009</p>
+  <p>#15 Autumn 2009</p>
+  <p>#16 Winter 2010</p>
+  <p>#17 Spring 2010</p>
+  <p>#18 Summer 2010</p>
+  <p>#19 Autumn 2010</p>
+  <p>#20 Winter 2011</p>
+  <p>#21 Spring 2011</p>
+  <p>#22 Summer 2011</p>
+  <p>#23 Autumn 2011</p>
+  <p>#24 Winter 2012</p>
+  <p>#25 Spring 2012</p>
+  <p>#26 Summer 2012</p>
+  <p>#27 Autumn 2012</p>
+  <p>#28 Winter 2013</p>
+  <p>#29 Spring 2013</p>
+  <p>#30 Summer 2013</p>
+  <p>#31 Autumn 2013</p>
+  <p>#32 Winter 2014</p>
+  <p>#33 Spring 2014</p>
+  <p>#34 Summer 2014</p>
+  <p>#35 Autumn 2014</p>
+  <p>#36 Winter 2015</p>
+  <p>#37 Spring 2015</p>
+  <p>#38 Summer 2015</p>
+  <p>#39 Autumn 2015</p>
+  <p>#40 Winter 2016</p>
+  <p>#41 Spring 2016</p>
+  <p>#42 Summer 2016</p>
+  <p>#43 Autumn 2016</p>
+  <p>#44 Winter 2017</p>
+  <p>#45 Spring 2017</p>
+  <p>#46 Summer 2017</p>
+  <p>#47 Autumn 2017</p>
+  <p>#48 Winter 2018</p>
+  <p class="todo">#49 Spring 2018</p>
+  <p class="todo">#50 Summer 2018</p>
+  <p class="todo">#51 Autumn 2018</p>
+  <p class="todo">#52 Winter 2019</p>
+  <p  class="todo">#53 Spring 2019</p>
+  <p class="todo" >#54 Summer 2019</p>
+  <p  class="todo">#55 Autumn 2019</p>
+  
+          <a href="#">
+                  <p class="folio winter">>&nbsp;<span class="numbering"><span>#</span>056</span> Winter 2020 <span class="synops">The last moments of the before time.</span></p>
+  </a>
+  
+          <a href="#">
+                  <p class="folio spring">>&nbsp;<span class="numbering"><span>#</span>057</span> Spring 2020 <span class="synops">COVID in the Gila</span></p>
+  </a> 
+          <a href="#">
+                  <p class="folio summer">>&nbsp;<span class="numbering"><span>#</span>058</span> Summer 2020 <span class="synops">Rocks and TP and too full of mountains and vedavoo </span></p>
+  </a>
+
+  <a href="#">
+          <p class="folio">>&nbsp;<span class="numbering"><span>#</span>059</span><span class="season"> Autumn 2020</span> <span class="synops">Grey Headed Cheaps.</span></p>
+  </a>
+  
+  </div>
+  <div id="current"> 
+          <a href="#">
+          </a>
+          <p  class="current">>&nbsp;<span class="numbering"><span>#</span>060</span><span class="season"> Winter 2021</span> <span class="synops">Winter Solstice <br/>Mon. 12&middot;21&middot;21 3:02 AM MST</span></p>
+  </div>
+  <br/>
+  <a href="#"1><p class="list">>>> Kyle Parker Cunningham</p></a>
+  <a href="#"><p id="" class="list">&middot;&middot;&middot;&middot;> Start Here</p></a>
+  <a href="#"><p id="" class="list">&middot;&middot;&middot;&middot;> Major Projects</p></a>
+  <a href="#"><p id="" class="list">&middot;&middot;&middot;&middot;> About, FAQ & Help</p></a>
+  <br/>
+  <a href="#"><p id="" class="list">&middot;&middot;&middot;&middot;> Works Available</p></a>
+  <a href="#"><p id="" class="list">&middot;&middot;&middot;&middot;> Inquiry & Purchase</p></a>
+  <br/>
+  <a href="#"><p id="special" class="list">&middot;&middot;&middot;&middot;>  SPECIAL PROJECTS</p></a>
+  <br/>
+  <a href="https://desertarchaic.com"><p class="list">&middot;&middot;&middot;&middot;>  Shop Desert Archaic</p></a>
+  <a href="https://jeannieortiz.com"><p class="list">&middot;&middot;&middot;&middot;>  see also: Jeannie Ortiz</p></a>
+  <a href="https://kyleparkercunningham.com"><p class="list">&middot;&middot;&middot;&middot;>  by: Kyle Parker Cunningham</p></a>
+
+
+ <br/>
+  <br/>
+  <a href="#"><p id="" class="list">==> Paintings</p></a>
+  <a href="#"><p id="" class="list">&middot;&middot;&middot;&middot;> Portraits</p></a>
+  <a href="#"><p id="" class="list">&middot;&middot;&middot;&middot;> Tomorrow</p></a>
+  <a href="#"><p id="" class="list">++++> Circle, Triangle, Square</p></a>
+  <a href="#"><p id="" class="list">++++> Topo (landscapes)</p></a>
+  <a href="#"><p id="" class="list">++++> Arm Fauna</p></a>
+  <br/>
+  <a href="#"><p id="" class="list">==> Printmaking</p></a>
+  <a href="#"><p id="" class="list">++++> Outer Space Ephemera</p></a>
+  <br/>
+  <a href="#"><p id="" class="list">==> Sculpture</p></a>
+  <a href="#"><p id="" class="list">==> Adornment</p></a>
+  <a href="#"><p id="" class="list">==> MeTeORiC</p></a>
+
+    <a href="#"><p id="" class="list">==> Stone</p></a>
+    <br/>
+
+  <a href="#"><p id="" class="list">==> Tools, Materials, Methods</p></a>
+  <br/>
+  <a href="#"><p id="" class="list">==> Adventure</p></a>
+  <br/>
+  <a href="#"><p id="" class="list">==> Elephants Nest</p></a>
+  <a href="#"><p id="" class="list">==> Mushroom Palce</p></a>
+  <br/>
+
+  <a href="#"><p id="" class="list">==> Rigs</p></a>
+  <a href="#"><p id="" class="list">==> Nomad Methodology</p></a>
+  <br/>
+
+  <div id="future">
+  <p class="future">#61 SPRING 2021</p>
+  <p class="future">#62 Summer 2021</p>
+  <p class="future">#63 Autumn 2021</p>
+  <p class="future">#64 Winter 2022</p> 
+  <p class="future">#65 Spring 2022</p>
+  </div>   
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
